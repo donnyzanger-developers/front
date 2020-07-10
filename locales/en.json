@@ -1,7 +1,7 @@
 {
   "title": "Stripe Checkout Sample",
   "headline": "Single photo",
-  "subline": "Purchase a Pasha original photo",
+  "subline": "Purchase a ButlerPrograms original photo",
   "sr-legal-text": "Number of copies (max 10)",
   "button": {
     "submit": "Buy for {{total}}"

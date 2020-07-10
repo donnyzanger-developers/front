@@ -356,7 +356,7 @@ pre {
 :root {
   --accent-color: #ed5f74;
   --headline-color: var(--accent-color);
-  --logo-image: url("https://storage.googleapis.com/stripe-sample-images/logo-pasha.svg");
+  --logo-image: url("https://storage.googleapis.com/frontback/logo-butler.svg");
 }
 
 .pasha-image-stack {
