@@ -2,7 +2,7 @@ var url = new URL(window.location.href);
 var id = url.searchParams.get("id");
 
 async function main() {
-    const res = await fetch(API + `/users/${id}`, {
+    const res = await fetch(API + `/admin/users/${id}`, {
         headers: {
             'Authorization': localStorage.getItem('googleToken')
         }
