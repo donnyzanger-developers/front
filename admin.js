@@ -19,7 +19,7 @@ async function main() {
             window.location = '/index.html';
         }
     }
-    const res = await fetch(API + '/users', {
+    const res = await fetch(API + '/admin/users', {
         headers: {
             'Authorization': localStorage.getItem('googleToken')
         }
