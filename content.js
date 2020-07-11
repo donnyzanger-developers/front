@@ -21,5 +21,5 @@ const url = API + '/content';
 if (googleToken) {
     getContent(url);
 } else {
-    window.location = '/index.html';
+    window.location = '/';
 }

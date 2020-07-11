@@ -12,11 +12,11 @@ async function userAdmin() {
 async function main() {
     const googleToken = localStorage.getItem('googleToken');  
     if (!googleToken) {
-        window.location = '/index.html';
+        window.location = '/';
     } else {
         const isAdmin = await userAdmin()
         if (!isAdmin) {
-            window.location = '/index.html';
+            window.location = '/';
         }
     }
     const res = await fetch(API + '/admin/users', {
