@@ -8,15 +8,15 @@
     <meta name="google-signin-client_id" content="441209949443-hvjr9e83qmoqfs30f5u487v0cf7j1a1r.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="/config.js"></script>
-    <script src="/index.js"></script>
   </head>
   <body>
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    <div><a href="#" onclick="signOut();" style="color:black">Sign out</a></div>
+    <div><a id="signout" href="#" onclick="signOut();" style="color:black" hidden>Sign out</a></div>
     <div id="email-address">&nbsp;</div>
-    <div id="admin" hidden>
-        <a href="/admin.html">admin panel</a>
+    <div>
+        <a id="admin" href="/admin.html" hidden>admin panel</a>
     </div>
     <a href="/content.html">paid content</a>
+    <script src="/index.js"></script>
   </body>
 </html>

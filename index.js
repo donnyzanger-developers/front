@@ -7,6 +7,7 @@ function onSignIn(googleUser) {
         document.getElementById("email-address").innerHTML = xhr.responseText;
         localStorage.setItem('googleToken', id_token);
         showAdminLink();
+        showSignoutLink();
     };
     xhr.send('idtoken=' + id_token);
 }
@@ -17,6 +18,7 @@ function signOut() {
         document.getElementById("email-address").innerHTML = '&nbsp;';
         localStorage.removeItem('googleToken');
         showAdminLink();
+        showSignoutLink();
     });
 
 }
@@ -43,4 +45,14 @@ async function showAdminLink() {
     }
 }
 
+async function showSignoutLink() {
+    if (localStorage.getItem('googleToken')) {
+        document.getElementById("signout").hidden = false;
+    } else {
+        document.getElementById("signout").hidden = true;
+    }
+}
+
+
 showAdminLink();
+showSignoutLink();
