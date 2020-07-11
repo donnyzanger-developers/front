@@ -4,12 +4,28 @@
     <meta charset="utf-8" />
     <title>Home</title>
     <meta name="description" content="" />
+    <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="google-signin-client_id" content="441209949443-hvjr9e83qmoqfs30f5u487v0cf7j1a1r.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" href="/css/styles.css">
     <script src="/config.js"></script>
   </head>
   <body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Butler</span> Programs</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>  
+    </header>
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <div><a id="signout" href="#" onclick="signOut();" style="color:black" hidden>Sign out</a></div>
     <div id="email-address">&nbsp;</div>
