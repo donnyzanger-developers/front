@@ -52,13 +52,10 @@ async function main() {
     users.forEach((user, i) => {
     // for (var i=0; i < users.length; i++) {
         document.getElementById(`edit-${i}`).addEventListener('click', async e => {
-            window.location =`/user.html?id=${user._id}`;
+            window.location = `/user.html?id=${user._id}`;
         });
         document.getElementById(`delete-${i}`).addEventListener('click', async e => {
-            alert(i);
-            // delete user i via api
-            // page should show deleted user is gone
-            // 
+            window.location = `/user/delete.html?id=${user._id}`;
         });
     });
 }
