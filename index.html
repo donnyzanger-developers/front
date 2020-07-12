@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="google-signin-client_id" content="441209949443-hvjr9e83qmoqfs30f5u487v0cf7j1a1r.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="/config.js"></script>
   </head>
   <body>
@@ -26,13 +26,52 @@
             </nav>
         </div>  
     </header>
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    <div><a id="signout" href="#" onclick="signOut();" style="color:black" hidden>Sign out</a></div>
-    <div id="email-address">&nbsp;</div>
-    <div>
-        <a id="admin" href="/admin.html" hidden>admin panel</a>
-    </div>
-    <a href="/content.html">paid content</a>
+    <section id="showcase">
+        <div class="container">
+            <h1>Website Development and Programming</h1>
+            <p>How can I help you?</p>
+          <!-- <h1>Affordable Professional Web Design</h1> -->
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p> -->
+        </div>
+    </section>
+    <section id="newsletter">
+        <div class="container">
+            <h1>Log in to your Account</h1>
+            <div id="loginarea">
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <div>
+                    <a id="signout" href="#" onclick="signOut();" hidden>Sign out</a>
+                </div>
+                <div id="email-address">&nbsp;</div>
+                <div>
+                    <a id="admin" href="/admin.html" hidden>admin panel</a>
+                </div>
+                <a href="/content.html">paid content</a>
+            </div>
+        </div>
+    </section>
+    <section id="boxes">
+        <div class="container">
+          <div class="box">
+            <img src="./img/logo_html.png">
+            <h3>HTML5 Markup</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+          <div class="box">
+            <img src="./img/logo_css.png">
+            <h3>CSS3 Styling</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+          <div class="box">
+            <img src="./img/logo_brush.png">
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>Acme Web Deisgn, Copyright &copy; 2017</p>
+      </footer>
     <script src="/index.js"></script>
   </body>
 </html>
