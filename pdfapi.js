@@ -1,5 +1,8 @@
 document.getElementById('convertHtmlToPdf').addEventListener('click', e => {
+    const loader = document.getElementById('loader');
     const website = document.getElementById('websiteInput').value;
+
+    loader.hidden = false;
 
     var xhr = new XMLHttpRequest();
     xhr.open('POST', API + '/html_to_pdf');
@@ -16,7 +19,9 @@ document.getElementById('convertHtmlToPdf').addEventListener('click', e => {
             a.style.display = 'none';
             document.body.appendChild(a);
             a.click();
+            loader.hidden = true;
         } else {
+            loader.hidden = true;
             alert('An error occurred!');
         }
     };
