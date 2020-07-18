@@ -1,3 +1,20 @@
+
+/* Grid */
+.col-container {
+    display: flex;
+    width: 100%;
+}
+.col {
+    flex: 1;
+    padding: 16px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid green; */
+}
+
 body{
     font: 15px/1.5 Arial, Helvetica,sans-serif;
     padding:0;
@@ -16,7 +33,7 @@ ul {
     padding:0;
 }
 
-/* Header **/
+/* Header */
 header{
     background:#354241;
     color:#ffffff;
@@ -103,7 +120,8 @@ header a:hover{
 }
 
 #newsletter #loginarea {
-    float:right;
+    text-align:center;
+    /* float:right; */
 }
 
 #newsletter #loginarea a {

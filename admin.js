@@ -26,23 +26,23 @@ async function main() {
     })
     const users = await res.json();
     var html = `
-        <div class="row">
-            <div class="col-3">email</div>
-            <div class="col-1">paid</div>
-            <div class="col-1">admin</div>
-            <div class="col-3">date</div>
-            <div class="col-4">
+        <div class="col-container">
+            <div class="col">email</div>
+            <div class="col">paid</div>
+            <div class="col">admin</div>
+            <div class="col">date</div>
+            <div class="col">
                 operations
             </div>
         </div>`
     users.forEach((user, i) => {
         html += ` 
-            <div class="row">
-                <div class="col-3">${user.email}</div>
-                <div class="col-1">${user.paid}</div>
-                <div class="col-1">${user.admin}</div>
-                <div class="col-3">${user.created}</div>
-                <div class="col-4">
+            <div class="col-container">
+                <div class="col">${user.email}</div>
+                <div class="col">${user.paid}</div>
+                <div class="col">${user.admin}</div>
+                <div class="col">${user.created}</div>
+                <div class="col">
                     <button id="edit-${i}">edit</button>
                     <button id="delete-${i}">delete</button>
                 </div>
